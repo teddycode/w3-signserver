@@ -127,8 +127,8 @@ walletConnectSigner
 
 // 全局捕获未处理的 Promise 拒绝
 process.on("unhandledRejection", (reason, promise) => {
-  if (promise?.code === -32601) return;
-  console.error("Unhandled Rejection at:", promise, "reason:", reason);
+  // if (promise?.code === -32601) return;
+  // console.error("Unhandled Rejection at:", promise, "reason:", reason);
 });
 
 module.exports = {
